@@ -1,4 +1,5 @@
 <img width="2559" height="1390" alt="изображение" src="https://github.com/user-attachments/assets/c4515a1a-e22e-41af-98fc-3549de2fce1e" />
+<img width="599" height="460" alt="изображение" src="https://github.com/user-attachments/assets/c691434e-3219-4f87-a2d5-f3cccba3ee2b" />
 
 Lumen 0.3.6 — кнопка «Выполнено» без переноса, с минимальной шириной 100 px. Окна расширений закреплены поверх остальных окон Windows и не закрываются при потере фокуса; закрытие — крестиком. На тестовом макете проверены ширины 360 и 470 px: nowrap и отсутствие переполнения.
 
