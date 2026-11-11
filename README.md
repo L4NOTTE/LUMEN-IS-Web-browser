@@ -1,5 +1,5 @@
 <div align="center">
-  file:///C:/%D0%A3%D0%A7%D0%95%D0%91%D0%90/%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/Lumen-0.3.9/assets/lumen.svg
+  <img src="assets/lumen.svg" width="88" height="88" alt="Логотип Lumen">
   <h1>Lumen</h1>
   <p><strong>Браузер для Windows, написанный на Rust</strong></p>
   <p>Лаконичный интерфейс · Настраиваемый внешний вид · Инструменты разработчика сбоку</p>
