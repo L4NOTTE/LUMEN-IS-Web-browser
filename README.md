@@ -3,7 +3,7 @@
   <h1>Lumen</h1>
   <p><strong>Браузер для Windows и Linux, написанный на Rust</strong></p>
   <p>Лаконичный интерфейс · Настраиваемый внешний вид · Инструменты разработчика сбоку</p>
-  <p><code>Rust</code> &nbsp; <code>Windows x64</code> &nbsp; <code>WebView2</code> &nbsp; <code>v0.4.7</code> &nbsp; <code>Linux preview</code></p>
+  <p><code>Rust</code> &nbsp; <code>Windows x64</code> &nbsp; <code>WebView2</code> &nbsp; <code>v0.4.6</code> &nbsp; <code>Linux preview</code></p>
 </div>
 
 ---
@@ -11,6 +11,8 @@
 Lumen — браузер с собственным интерфейсом и нативной логикой на **Rust**. Вкладки, управление окнами, горячие клавиши, настройки и интеграция с Windows реализованы на Rust. В Windows сайты отображает **Microsoft Edge WebView2** на основе Chromium, в Linux — **WebKitGTK**. Интерфейс браузера создан на HTML, CSS и JavaScript.
 
 ## Платформы
+
+**Установка Linux из GitHub:** `git clone https://github.com/L4NOTTE/Lumen.git`, затем `cd Lumen` и `bash tools/install-linux.sh`. Зависимости, Rust и обновление через `git pull --ff-only` описаны в [LINUX.md](LINUX.md). Это текущий WebKitGTK preview, а не завершённая Chromium-версия.
 
 **Windows x64** — основная версия. **Ubuntu 24.04 / Linux Mint 22.x x64** — первый Linux-порт (preview).
 
