@@ -6,6 +6,8 @@
 
 ## Возможности и отличия
 
+В 0.4.8 отключены DevTools и запросы разрешений сайтов. Пользовательская установка в ~/.local/bin/lumen проверяет подписанные обновления через /usr/bin/curl. Системный пакет обновляется через менеджер пакетов.
+
 Перенесены общий интерфейс, вкладки и плавная перестановка внутри окна, адресная строка и поиск, история, быстрые ссылки, темы/шрифты/фон, масштаб по сайтам, восстановление сеанса и инкогнито. Добавлена обработка fullscreen-событий страниц и размещение WebKit Inspector в боковой GTK-панели.
 
 | Возможность | Windows | Linux preview |
@@ -48,7 +50,7 @@ sudo apt install ./lumen_0.4.6_amd64.deb
 
 ```bash
 sudo apt update
-sudo apt install git build-essential pkg-config libgtk-3-dev libwebkit2gtk-4.1-dev libx11-dev libxrandr-dev libxkbcommon-dev libwayland-dev gstreamer1.0-libav gstreamer1.0-plugins-good
+sudo apt install git curl build-essential pkg-config libgtk-3-dev libwebkit2gtk-4.1-dev libx11-dev libxrandr-dev libxkbcommon-dev libwayland-dev gstreamer1.0-libav gstreamer1.0-plugins-good
 ```
 
 Нужны установленные `cargo` и `rustc` (Rust stable). Если их нет, установите Rust по инструкции https://rustup.rs/ и откройте терминал заново. Если библиотеки уже установлены, последующие команды не требуют sudo:
