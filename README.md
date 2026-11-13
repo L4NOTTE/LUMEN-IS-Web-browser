@@ -3,7 +3,7 @@
   <h1>Lumen</h1>
   <p><strong>Браузер для Windows и Linux, написанный на Rust</strong></p>
   <p>Лаконичный интерфейс · Настраиваемый внешний вид · Инструменты разработчика сбоку</p>
-  <p><code>Rust</code> &nbsp; <code>Windows x64</code> &nbsp; <code>WebView2</code> &nbsp; <code>v0.4.23</code> &nbsp; <code>Linux preview</code></p>
+  <p><code>Rust</code> &nbsp; <code>Windows x64</code> &nbsp; <code>WebView2</code> &nbsp; <code>v0.4.25</code> &nbsp; <code>Linux preview</code></p>
 </div>
 
 ---
