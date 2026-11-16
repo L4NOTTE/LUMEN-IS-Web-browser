@@ -3,7 +3,7 @@
   <h1>Lumen</h1>
   <p><strong>Браузер для Windows и Linux, написанный на Rust</strong></p>
   <p>Лаконичный интерфейс · Настраиваемый внешний вид · Инструменты разработчика сбоку</p>
-  <p><code>Rust</code> &nbsp; <code>Windows x64</code> &nbsp; <code>WebView2</code> &nbsp; <code>v0.4.77</code> &nbsp; <code>Linux preview</code></p>
+  <p><code>Rust</code> &nbsp; <code>Windows x64</code> &nbsp; <code>WebView2</code> &nbsp; <code>v0.4.78</code> &nbsp; <code>Linux preview</code></p>
 </div>
 
 ---
@@ -14,7 +14,7 @@ Lumen — браузер с собственным интерфейсом и н�
 
 **Установка Linux из GitHub:** `git clone https://github.com/L4NOTTE/Lumen.git`, затем `cd Lumen` и `bash tools/install-linux.sh`. Зависимости, Rust и обновление через `git pull --ff-only` описаны в [LINUX.md](LINUX.md). Это текущий WebKitGTK preview, а не завершённая Chromium-версия.
 
-**Windows x64** — основная версия. **Ubuntu 24.04 / Linux Mint 22.x x64** — первый Linux-порт (preview).
+**Windows x64** — основная версия. **Ubuntu 24.04, Fedora 44 и Arch Linux x86_64** — цели Linux-порта. Для Fedora и Arch добавлены задания нативной сборки и тестов. Готовность пакетов и поведение в графической среде проверяются отдельно.
 
 Linux использует другой движок: Chrome-расширения, Shazam/VK Next и оформление Chromium DevTools не перенесены. Linux-ветка подготовлена для сборки в Actions, но её нативный запуск на этой рабочей машине не проверен. Возможности, ограничения и получение `.deb` описаны в [LINUX.md](LINUX.md).
 
@@ -100,6 +100,13 @@ iscc installer/lumen.iss
 Загрузите **содержимое архива исходников** в корень репозитория, включая скрытую папку `.github`. Рядом с README должны находиться `Cargo.toml`, `Cargo.lock`, `src`, `ui` и остальные файлы проекта.
 
 Workflow [build-windows](.github/workflows/build.yml) запускается для pull request, при отправке изменений в `main` и вручную через **Actions → build-windows → Run workflow**. Он проверяет команды от веб-страниц, подписи обновлений и загрузки в собранном браузере, затем собирает установщик. Аудит зависимостей запускает [security-audit](.github/workflows/security.yml). Артефакт **lumen-windows** доступен со страницы успешного запуска.
+
+## Что нового в 0.4.78
+
+- В отделённом окне кнопки масштаба обновляют страницу и значение в панели на каждом шаге.
+- В отделённом окне Windows видны статус VPN и текущий сервер.
+- Windows принимает подписки VLESS TCP без шифрования и запрашивает подтверждение перед подключением.
+- Импорт подписок обрабатывает перенаправление на тот же HTTPS-адрес с временным cookie.
 
 ## Что нового в 0.4.77
 
