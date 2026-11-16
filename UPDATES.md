@@ -17,13 +17,15 @@
 Публикуйте файлы в GitHub Releases в репозитории `L4NOTTE/LUMEN-IS-Web-browser` под тегом `v<версия>`. Отметьте стабильный релиз как Latest. Прикрепите установщик и манифест отдельными файлами.
 
 - `LumenSetup.exe` для Windows x64.
+- `Lumen-<версия>-Windows-x64.zip` для ручного обновления портативной версии.
+- `SHA256SUMS.txt` с контрольными суммами финальных файлов для скачивания.
 - `lumen-linux-x64` для Linux x64 при наличии проверенной сборки.
 - `lumen-update.json`, подписанный после подготовки всех файлов, которые войдут в обновление. Для выпуска только под Windows достаточно установщика.
 
 Пример подписи Windows-выпуска в PowerShell на машине владельца ключа:
 
 ```powershell
-./tools/sign-update-local.ps1 -Version 0.4.24 -WindowsInstaller ./LumenSetup.exe -Output ./lumen-update.json -ProtectedKey 'C:\path\to\private.dpapi'
+./tools/sign-update-local.ps1 -Version 0.4.77 -WindowsInstaller ./LumenSetup.exe -Output ./lumen-update.json -ProtectedKey 'C:\path\to\private.dpapi'
 ```
 
 Для выпуска с Linux добавьте `-LinuxBinary ./lumen-linux-x64`. Версия должна соответствовать собранному исходному коду и тегу. Срок действия манифеста составляет 30 дней. Приватный ключ хранится вне исходников под DPAPI текущего пользователя Windows. Сохраняйте доступ к ключу, чтобы установленный браузер мог принимать будущие релизы.
