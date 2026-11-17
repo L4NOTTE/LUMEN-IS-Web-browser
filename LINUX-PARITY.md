@@ -1,5 +1,7 @@
 # Linux feature parity — work in progress
 
+Состояние на 18 ноября 2026 года — работа над Linux-портом приостановлена. Текущие изменения 0.5.0 проверяются на Windows. Ниже сохранены сведения о ранее подготовленной Linux-ветке.
+
 ## Targets for the Windows 0.4.77 port
 
 Ubuntu 24.04, Fedora 44 and Arch Linux on x86_64 GNU are the initial build targets. The preview now reuses the Windows local-history search suggestions and clears them when browsing history is deleted. The Fedora and Arch jobs build and link against each distribution's real system libraries. Ubuntu also has an Xvfb startup check. Desktop checks with real window managers on X11 and Wayland are still required.
